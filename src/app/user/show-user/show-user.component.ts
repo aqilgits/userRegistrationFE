@@ -23,12 +23,12 @@ export class ShowUserComponent implements OnInit {
 
   addClick() {
     this.User = {
-      UserId: "0",
-      UserName: "",
-      Email:"",
-      Phone:"",
-      SkillSets:"",
-      Hobby:"",
+      userid: "0",
+      username: "",
+      email:"",
+      phone:"",
+      skilsets:"",
+      hobby:"",
     }
     this.ModalTitle = "Add User";
     this.ActivateAddEditUserComp = true;

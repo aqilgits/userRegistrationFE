@@ -9,7 +9,7 @@ import { ApiserviceService } from 'src/app/apiservice.service';
 export class AddEditUserComponent implements OnInit {
   constructor(private service: ApiserviceService) { }
 
-  @Input() user: any;
+  @Input() User: any;
   userid = "";
   username = "";
   email = "";
@@ -19,12 +19,12 @@ export class AddEditUserComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.userid = this.user.userid;
-    this.username = this.user.username;
-    this.email = this.user.email;
-    this.phone = this.user.phone;
-    this.skillsets = this.user.skillsets;
-    this.hobby = this.user.hobby;
+    this.userid = this.User.userid;
+    this.username = this.User.username;
+    this.email = this.User.email;
+    this.phone = this.User.phone;
+    this.skillsets = this.User.skillsets;
+    this.hobby = this.User.hobby;
   }
 
   addUser() {
