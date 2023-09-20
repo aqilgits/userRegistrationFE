@@ -1,0 +1,32 @@
+<div class="d-flex flex-row bd-highlight mb-9">
+    <div class="p-2 w-100 bd-highlight">
+        <div class="input-group mb-12">
+            <span class="input-group-text">User name</span>
+            <input type="text" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="input-group mb-12">
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control" [(ngModel)]="email">
+        </div>
+        <div class="input-group mb-12">
+            <span class="input-group-text">Phone</span>
+            <input type="text" class="form-control" [(ngModel)]="phone">
+        </div>
+        <div class="input-group mb-12">
+            <span class="input-group-text">Skill sets</span>
+            <input type="text" class="form-control" [(ngModel)]="skillsets">
+        </div>
+        <div class="input-group mb-12">
+            <span class="input-group-text">Hobby</span>
+            <input type="text" class="form-control" [(ngModel)]="hobby">
+        </div>
+    </div>
+    
+</div>
+<button (click)="addUser()" *ngIf="user.userid == '0'" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateUser()" *ngIf="user.userid !='0'" class="btn btn-primary">
+    Update
+</button>
